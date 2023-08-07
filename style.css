@@ -1,0 +1,89 @@
+/* add fonts */
+@import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Numans&display=swap');
+
+/* Navbar Start*/
+.row{
+    flex-basis: 100%;
+    display: flex;
+}
+/* home-aboutme */
+.navbar{
+    padding-right: 100px;
+    padding-left: 100px;
+    height: min-content;
+    padding-top: 1px;
+    padding-bottom: 1px;
+}
+.navbar-nav{
+    background: #F2EBE9;
+}
+.nav-items{
+    display: flex;
+    gap: 28px;
+    align-items: center;   
+    justify-content: left;     
+}
+.nav-items a{
+    color: #DE5499;
+    font-family: Numans;
+    font-size: 20px;
+    display: inline;  
+    text-decoration: none;
+}
+a:hover{
+    color: #DE5499;
+}
+
+/* Nilsu */
+
+.nav-logo{
+    display: flex;
+}
+
+.nav-logo b{
+    color: #DE5499;
+    text-align: center;
+    align-items: center;
+    font-family: Fascinate Inline;
+    font-size: 65px;
+}
+
+/* Icons */
+
+.nav-icons{
+    align-items: center;
+    display: flex;
+    justify-content: right;
+    gap: 40px;
+}
+
+.nav-icons a{
+    display: inline;
+}
+
+@media screen and (max-width:1000px) {
+    
+    .navbar{
+        padding-right: 70px;
+        padding-left: 70px;
+    }
+    .nav-icons{
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .navbar{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+    .nav-icons{
+        display: none;
+    }
+    .nav-items{
+        display: none;   
+    }
+}
+
+/* Navbar End */
