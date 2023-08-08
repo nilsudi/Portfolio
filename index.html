@@ -19,17 +19,47 @@
                     <div><a href="#">Home</a></div>
                     <div><a href="#">AboutMe</a></div>
                 </div>
-
                 <!-- Nilsu Logo -->    
                 <div class="col-4 nav-logo justify-content-center">
                     <b class="logo">Nilsu</b> 
                 </div>
-
                 <!-- Navbar Icons -->
                 <div class="col-4 nav-icons">
                     <a href="#"><img src="/images/email.png" alt="email" style="height: 40px; width: 40px;"></a>
                     <a href="https://github.com/nilsudi"><img src="/images/github.png" alt="github" style="height: 47px; width: 47px;"></a>
-                    <a href="https://www.linkedin.com/in/nilsu-din%C3%A7ol-a09892266/"><img src="/images/linkedin.png" alt="linkedin" style="height: 32px; width: 32px;"></a>
+                    <a href="https://www.linkedin.com/in/nilsu-din%C3%A7ol-a09892266/"><img src="/images/linkedin_circle.png" alt="linkedin" style="height: 41px; width: 41px;"></a>
+                </div>
+                <!-- Navbar Menu -->
+                <div class="col-auto nav-menu">
+
+                    <button class="btn menu-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img src="/images/menu_icon.png" alt="menu"></button>
+
+                    <div class="offcanvas offcanvas-end menu-offc" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+
+                      <div class="offcanvas-header justify-content-end">
+                        <button type="button" class="btn-close text-reset x-btn " data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                      </div>
+
+                      <div class="offcanvas-body">
+                        <ul class="list-group list-group-flush menu-list">
+                            <li class="list-group-item menu-item"><a href="#"><div>Home</div></a></li>
+                            <li class="list-group-item menu-item"><a href="#"><div>About Me</div></a></li>
+                            <li class="list-group-item menu-item "><a href="#">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Contact Me
+                                      </button>
+                                      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                        <li><a class="dropdown-item" href="#">Action</a></li>
+                                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                      </ul>
+                                </div></a></li>
+                          </ul>
+                      </div>
+
+                    </div>
+
                 </div>
             </div>
         </div>

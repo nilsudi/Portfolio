@@ -2,6 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Numans&display=swap');
 
+body{
+    background-color : #EDDCD9;  
+} 
+
 /* Navbar Start*/
 .row{
     flex-basis: 100%;
@@ -61,6 +65,48 @@ a:hover{
 .nav-icons a{
     display: inline;
 }
+/* Menu Items */
+.nav-menu{
+    display: none;
+    align-items: center;
+    width: min-content;
+    justify-self: end;
+}
+.menu-btn{
+    width: fit-content;
+    height: fit-content;
+}
+.menu-btn img{
+    width: 50px;
+    height: 50px;
+}
+
+/* Offcanvas Items */
+.offcanvas-body{
+    background-color: transparent;
+}
+.menu-list li{
+    background-color: transparent;
+}
+.menu-item a{
+    color: #DE5499;
+    font-family: Numans;
+    font-size: 18px;
+    display: inline;  
+    text-decoration: none;
+}
+.menu-offc{
+    background-color: #F2EBE9;
+    width: 60%;
+}
+.offcanvas-header{
+    background-color: transparent;
+}
+.Close{
+    color: #DE5499;
+}
+
+
 
 @media screen and (max-width:1000px) {
     
@@ -83,6 +129,10 @@ a:hover{
     }
     .nav-items{
         display: none;   
+    }
+    /* Menu Items */
+    .nav-menu{
+        display: flex;
     }
 }
 
