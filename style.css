@@ -51,6 +51,7 @@ a:hover{
     align-items: center;
     font-family: Fascinate Inline;
     font-size: 65px;
+    display: block;
 }
 
 /* Icons */
@@ -72,9 +73,10 @@ a:hover{
     width: min-content;
     justify-self: end;
 }
-.menu-btn{
+#menu-btn{
     width: fit-content;
     height: fit-content;
+    border: none;
 }
 .menu-btn img{
     width: 50px;
@@ -102,9 +104,23 @@ a:hover{
 .offcanvas-header{
     background-color: transparent;
 }
-.Close{
+
+#contact-btn{
     color: #DE5499;
+    font-family: Numans;
+    font-size: 18px;
+    display: inline;  
+    text-decoration: none;
+    border: none;
+    padding: 0px;
 }
+.dropdown-menu li a{
+    color: #DE5499;
+    font-family: Numans;
+    font-size: 16px; 
+    text-decoration: none;
+}
+
 
 
 
