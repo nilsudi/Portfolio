@@ -66,28 +66,30 @@ a:hover{
     display: inline;
 }
 /* Menu Items */
-.nav-menu{
+#nav-menu{
     display: none;
-    align-items: center;
-    width: min-content;
-    justify-self: end;
+    align-items: center;   
+    justify-content: right;  
+    padding-right: 0px;
 }
 #menu-btn{
-    width: fit-content;
-    height: fit-content;
+    align-content: right;
     border: none;
     margin-right: 0px;
+    padding-right: 0px;
 }
 #menu-btn img{
     width: 60px;
     height: 60px;
+    margin-right: 0px;
+    padding-right: 0px;
 }
 
 /* Offcanvas Items */
 .offcanvas-body{
     background-color: transparent;
 }
-.menu-list li{
+#menu-list li{
     background-color: transparent;
 }
 .menu-item a{
@@ -114,14 +116,27 @@ a:hover{
     border: none;
     padding: 0px;
 }
-.dropdown-menu li a{
-    color: #DE5499;
-    font-family: Numans;
-    font-size: 16px; 
-    text-decoration: none;
+#contact-menu{
+    background-color: transparent;
+    border: none;
 }
 
+#contact-menu li a{
+    color: #DE5499;
+    font-family: Numans;
+    font-size: 17px; 
+    text-decoration: none;
+    border-bottom: 1px solid;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    border-color: gainsboro;
 
+
+}
+#contact-menu li a:hover{
+    color: #DE5499;
+    background-color: #f5efee ;
+}
 
 
 @media screen and (max-width:1000px) {
@@ -137,7 +152,7 @@ a:hover{
 
 @media screen and (max-width:850px){
     #my-navbar{
-        padding-right: 50px;
+        padding-right: 0px;
         padding-left: 50px;
     }
     .nav-icons{
@@ -147,8 +162,14 @@ a:hover{
         display: none;   
     }
     /* Menu Items */
-    .nav-menu{
+    #nav-menu{
         display: flex;
+    }
+}
+@media screen and (max-width:445px) {
+    #my-navbar{
+        padding-left: 60px;
+        padding-right: 60px;
     }
 }
 
