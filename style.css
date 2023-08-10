@@ -4,12 +4,18 @@
 
 #my-canvas{
     background-color : #EDDCD9;  
+    overflow-x: hidden;
 } 
+.everything-else{ /* everything else other than navbar */
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 30px;
+}
 
 /* Navbar Start*/
-.row{
+#navbar-row{
     flex-basis: 100%;
-    display: flex;
+    display: absolute;
 }
 /* home-aboutme */
 #my-navbar{
@@ -138,6 +144,76 @@ a:hover{
     background-color: #f5efee ;
 }
 
+/* Navbar End */
+
+
+
+/* Photo And Hey Start*/
+
+
+#explanation{
+    padding-top: 80px;
+    z-index: 2;
+}
+
+
+#hey-header{
+    color: #264143;
+    font-family: Numans;
+    font-size: 65px;
+    position: relative;
+}
+#welcome-prg{
+    color: #264143;
+    font-family: Numans;
+    font-size: 18px;
+    position: relative;
+}
+
+
+#my-images{
+    z-index: 1;
+}
+
+#headshot-img img{
+    background: url(<path-to-image>), lightgray 50% / cover no-repeat;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    right: 24.458px;
+    bottom: 18px;
+    width: 370px;
+    height: 500px;
+    position: absolute;
+    z-index: 4;
+    left: -1px; /* Adjust as needed */
+    top: -1px;
+}
+#bg-rectangle{
+    width: 370px;
+    height: 500px;
+    transform: rotate(-4deg);
+    background: #264143;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    position: relative;
+    z-index: 3;
+}
+
+.image-container{
+    width: max-content;
+    position: relative;
+    margin: 50px;
+}
+
+.weird-shape{
+    width: 250px;
+    height: 45.8px;
+    transform: rotate(3.1deg);
+    flex-shrink: 0;
+    position: relative;
+    z-index: 0;
+    left: -200px; /* Adjust as needed */
+    top: -900px;
+}
+
 
 @media screen and (max-width:1000px) {
     
@@ -148,6 +224,11 @@ a:hover{
     .nav-icons{
         gap: 30px;
     }
+    .everything-else{
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+    
 }
 
 @media screen and (max-width:850px){
@@ -165,12 +246,33 @@ a:hover{
     #nav-menu{
         display: flex;
     }
+    .everything-else{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .weird-shape{
+        top: -1000px;
+    }
+    
 }
+@media screen and (max-width:768px) {
+    .weird-shape{
+        top: -1200px;
+    }
+}
+
 @media screen and (max-width:445px) {
     #my-navbar{
         padding-left: 60px;
         padding-right: 60px;
     }
+    .everything-else{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .weird-shape{
+        top: -1300px;
+    }
 }
 
-/* Navbar End */
+
