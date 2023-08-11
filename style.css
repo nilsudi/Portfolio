@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Numans&display=swap');
 
-#my-canvas{
+html, #my-canvas{
     background-color : #EDDCD9;  
     overflow-x: hidden;
+    position: relative;
 } 
 .everything-else{ /* everything else other than navbar */
     margin-left: 100px;
@@ -25,6 +26,7 @@
     padding-top: 1px;
     padding-bottom: 1px;
     background: #F2EBE9;
+    z-index: 4;
 }
 
 .nav-items{
@@ -152,7 +154,7 @@ a:hover{
 
 
 #explanation{
-    padding-top: 80px;
+    padding-top: 100px;
     z-index: 2;
 }
 
@@ -173,6 +175,10 @@ a:hover{
 
 #my-images{
     z-index: 1;
+    padding: 0;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #headshot-img img{
@@ -207,9 +213,8 @@ a:hover{
     width: 250px;
     height: 45.8px;
     transform: rotate(3.1deg);
-    flex-shrink: 0;
     position: relative;
-    z-index: 0;
+    /* z-index: 0; */
     left: -200px; /* Adjust as needed */
     top: -900px;
 }
@@ -257,7 +262,7 @@ a:hover{
 }
 @media screen and (max-width:768px) {
     .weird-shape{
-        top: -1200px;
+        top: -1250px;
     }
 }
 
