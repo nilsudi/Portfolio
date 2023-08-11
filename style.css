@@ -207,6 +207,7 @@ a:hover{
     width: max-content;
     position: relative;
     margin: 50px;
+    padding-right: 10px;
 }
 
 .weird-shape{
