@@ -77,7 +77,7 @@ a:hover{
 #nav-menu{
     display: none;
     align-items: center;   
-    justify-content: right;  
+    justify-content: between;  
     padding-right: 0px;
 }
 #menu-btn{
@@ -264,6 +264,9 @@ a:hover{
 @media screen and (max-width:768px) {
     .weird-shape{
         top: -1250px;
+    }
+    #explanation{
+        padding-top: 10px;
     }
 }
 
