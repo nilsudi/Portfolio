@@ -303,10 +303,17 @@ a:hover{
 
 /* Contact Me Area */
 
+#holder{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
 #contact-me-area{
     margin-top: 60px;
-    margin-left: 100px;
-    margin-right: 100px;
+    /* margin-left: 100px;
+    margin-right: 100px; */
+    position: relative;
     height: fit-content;
     width: fit-content;
     padding: 50px 100px 50px 100px;
@@ -315,6 +322,7 @@ a:hover{
     text-align: center;
     justify-content: center;
     align-items: center;
+    
 }
 #contact-me-header{
     text-align: center;
@@ -482,6 +490,14 @@ a:hover{
     #contact-me-area{
         margin-right: 0px;
         margin-left: 0px;
+    }
+    #headshot-img img{
+        width: 300px;
+        height: 401px;
+    }
+    #bg-rectangle{
+        width: 300px;
+        height: 401px;
     }
 }
 

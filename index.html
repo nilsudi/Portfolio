@@ -27,7 +27,7 @@
                 </div>
                 <!-- Navbar Icons -->
                 <div class="col-4 nav-icons">
-                    <a href="#"><img src="images/email.png" alt="email" style="height: 40px; width: 40px;"></a>
+                    <a href="#contact-me-area"><img src="images/email.png" alt="email" style="height: 40px; width: 40px;"></a>
                     <a href="https://github.com/nilsudi" target="_blank"><img src="images/github.png" alt="github" style="height: 47px; width: 47px;"></a>
                     <a href="https://www.linkedin.com/in/nilsu-din%C3%A7ol-a09892266/" target="_blank"><img src="images/linkedin_circle.png" alt="linkedin" style="height: 41px; width: 41px;"></a>
                 </div>
@@ -54,7 +54,7 @@
                                     Contact Me
                                       </button>
                                       <ul class="dropdown-menu" id="contact-menu">
-                                        <li><a class="dropdown-item" href="#"><div><img src="images/email.png" alt="email" style="height: 26px; width: 26px;"> Mail Me</div></a></li>
+                                        <li><a class="dropdown-item" href="#contact-me-area"><div><img src="images/email.png" alt="email" style="height: 26px; width: 26px;"> Mail Me</div></a></li>
                                         <li>
                                             <a class="dropdown-item" href="https://www.linkedin.com/in/nilsu-din%C3%A7ol-a09892266/" target="_blank">
                                                 <div class="row justify-content-between">
@@ -172,27 +172,28 @@
         </div>
 
         <!-- Contact Me -->
-
-        <div id="contact-me-area">
-            <div id="contact-me-header">
-                CONTACT ME
-            </div>
-            <div class="container-fluid" id="">
-                <div class="row" id="content-div">
-                    <div class="col-sm" id="name-and-mail-boxes" style="padding-top: 50px;">
-                        <div class="">
-                            <input type="text" class="name-mail" placeholder="Name">
+        <div id="holder">
+            <div id="contact-me-area">
+                <div id="contact-me-header">
+                    CONTACT ME
+                </div>
+                <div class="container-fluid" id="">
+                    <div class="row" id="content-div">
+                        <div class="col-sm" id="name-and-mail-boxes" style="padding-top: 50px;">
+                            <div class="">
+                                <input type="text" class="name-mail" placeholder="Name">
+                            </div>
+                            <div class="">
+                                <input type="email" class="name-mail" placeholder="Email">
+                            </div>
                         </div>
-                        <div class="">
-                            <input type="email" class="name-mail" placeholder="Email">
+                        <div class="col-sm" style="">
+                            <textarea name="message-input" id="message-input" cols="30" rows="10" placeholder="           Your Message"></textarea>
+                            <!-- <input type="text" id="message-input" placeholder="               Your Message"> -->
                         </div>
-                    </div>
-                    <div class="col-sm" style="">
-                        <textarea name="message-input" id="message-input" cols="30" rows="10" placeholder="           Your Message"></textarea>
-                        <!-- <input type="text" id="message-input" placeholder="               Your Message"> -->
-                    </div>
-                    <div>
-                        <button class="btn" id="send-btn" >Send</button>
+                        <div>
+                            <button class="btn" id="send-btn" >Send</button>
+                        </div>
                     </div>
                 </div>
             </div>
