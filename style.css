@@ -1,16 +1,17 @@
 /* add fonts */
 @import url('https://fonts.googleapis.com/css?family=Fascinate+Inline&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Numans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap');
 
 html, #my-canvas{
     background-color : #EDDCD9;  
     overflow-x: hidden;
     position: relative;
 } 
-.everything-else{ /* everything else other than navbar */
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
+.first-impression{ 
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
 }
 
 /* Navbar Start*/
@@ -99,6 +100,11 @@ a:hover{
 }
 #menu-list li{
     background-color: transparent;
+    border-bottom: none;
+}
+#menu-list li:hover{
+    background-color: #f5efee;
+    border-radius: 30px;
 }
 .menu-item a{
     color: #DE5499;
@@ -134,7 +140,6 @@ a:hover{
     font-family: Numans;
     font-size: 17px; 
     text-decoration: none;
-    border-bottom: 1px solid;
     padding-top: 9px;
     padding-bottom: 9px;
     border-color: gainsboro;
@@ -143,7 +148,8 @@ a:hover{
 }
 #contact-menu li a:hover{
     color: #DE5499;
-    background-color: #f5efee ;
+    background-color: #F2EBE9;
+    border-radius: 30px;
 }
 
 /* Navbar End */
@@ -156,6 +162,8 @@ a:hover{
 #explanation{
     padding-top: 100px;
     z-index: 2;
+    margin-left: 100px;
+    padding-right: 30px;
 }
 
 
@@ -175,10 +183,11 @@ a:hover{
 
 #my-images{
     z-index: 1;
-    padding: 0;
     text-align: center;
     align-items: center;
     justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #headshot-img img{
@@ -206,7 +215,7 @@ a:hover{
 .image-container{
     width: max-content;
     position: relative;
-    margin: 50px;
+    margin: 30px;
     padding-right: 10px;
 }
 
@@ -219,7 +228,142 @@ a:hover{
     left: -200px; /* Adjust as needed */
     top: -900px;
 }
+/* Photo and Hey End */
 
+/* Text-Box Div */
+
+#text-box{
+    height: fit-content;
+    margin-top: -200px;
+    padding: 25px;
+    z-index: 2;
+    position: relative;
+    background-color: #DE5499;
+
+}
+#div-in-div{
+    height: fit-content;
+    background-color: #F3AB5A;
+    color: #264143;
+    font-family: Numans;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+/* Skills */
+
+#first-stroke{
+    border: 5px solid #F097C4;
+    background: transparent;
+    height: fit-content;
+    padding: 5px;
+    margin-top: 60px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#second-stroke{
+    border: 5px solid #E99F4C;
+    background: transparent;
+    height: fit-content;
+    padding: 5px;
+}
+#third-stroke{
+    border: 5px solid #7E8B8D;
+    background: transparent;
+    height: fit-content;
+    padding: 5px;
+}
+#fourth-stroke{
+    border: 5px solid #F2EBE9;
+    background: transparent;
+    height: fit-content;
+    padding: 10px;
+}
+#skills-header{
+    color: #DE5499;
+    font-family: Bungee Inline;
+    font-size: 40px;
+    text-align: center;
+}
+#skills-listed{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+}
+
+#skills-listed img{
+    width: 128px;
+    height: 128px;
+    padding: 10px;
+
+}
+
+/* Contact Me Area */
+
+#contact-me-area{
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: 100px;
+    height: fit-content;
+    width: fit-content;
+    padding: 50px 0px 0px 0px;
+    background-color: #D9D9D9;
+    border-radius: 100px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+#contact-me-header{
+    text-align: center;
+    font-family: Numans;
+    font-size: 20px;
+    color: #264143;
+}
+#content-div{
+    background-color: #7E8B8D;
+    border-radius: 100px;
+    padding: 50px;
+    margin-top: 40px;  
+    width: fit-content;
+    box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
+}
+.name-mail{
+    background-color: #D9D9D9;
+    margin: 10px;
+    width: 300px;
+    height: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    font-size: 18px;
+    font-family: Numans;
+    border: none;
+}
+#message-input{
+    background-color: #D9D9D9;
+    width: 300px;
+    height: 270px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Numans;
+    border: none;
+    margin: 10px;
+    text-align: center;
+}
+#send-btn{
+    background-color: #F097C4;
+    width: 110px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-family: Numans;
+    color: #D9D9D9;
+    margin: 10px;
+    text-align: center;
+
+}
 
 @media screen and (max-width:1000px) {
     
@@ -230,7 +374,11 @@ a:hover{
     .nav-icons{
         gap: 30px;
     }
-    .everything-else{
+    #explanation{
+        margin-left: 70px;
+        margin-top: 0px;
+    }
+    #first-stroke{
         margin-left: 70px;
         margin-right: 70px;
     }
@@ -240,7 +388,7 @@ a:hover{
 @media screen and (max-width:850px){
     #my-navbar{
         padding-right: 0px;
-        padding-left: 50px;
+        padding-left: 25px;
     }
     .nav-icons{
         display: none;
@@ -252,12 +400,21 @@ a:hover{
     #nav-menu{
         display: flex;
     }
-    .everything-else{
+    #explanation{
         margin-left: 50px;
         margin-right: 50px;
+        margin-top: 0px;
     }
     .weird-shape{
         top: -1000px;
+    }
+    #first-stroke{
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    #contact-me-area{
+        margin-left: 0px;
+        margin-right: 0px;
     }
     
 }
@@ -266,21 +423,36 @@ a:hover{
         top: -1250px;
     }
     #explanation{
-        padding-top: 10px;
+        padding-top: 60px;
+        margin-right: 50px;
+        margin-left: 50px;
+        width: fit-content;
+    }
+    #first-stroke{
+        margin-right: 25px;
+        margin-left: 25px;
     }
 }
 
 @media screen and (max-width:445px) {
     #my-navbar{
         padding-left: 60px;
-        padding-right: 60px;
+        padding-right: 0px;
     }
-    .everything-else{
+    #explanation{
         margin-left: 20px;
         margin-right: 20px;
     }
     .weird-shape{
         top: -1300px;
+    }
+    #headshot-img img{
+        width: 350px;
+        height: 473px;
+    }
+    #bg-rectangle{
+        width: 350px;
+        height: 473px;
     }
 }
 
