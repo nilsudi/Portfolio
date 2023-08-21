@@ -220,7 +220,7 @@ html, #my-canvas{
     height: 500px;
     position: absolute;
     z-index: 4;
-    left: 0px; /* Adjust as needed */
+    left: 0px; /* Makes the image and the rectangle right on top */
     top: 0px;
     transition: all 0.3s;
 }
@@ -344,7 +344,7 @@ html, #my-canvas{
     position: relative;
     height: fit-content;
     width: fit-content;
-    padding: 50px 100px 50px 100px;
+    padding: 50px 100px 50px 20px;
     background-color: #D9D9D9;
     border-radius: 100px 100px 0px 0px;
     text-align: center;
