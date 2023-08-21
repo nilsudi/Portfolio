@@ -23,34 +23,41 @@ html, #my-canvas{
 #my-navbar{
     padding-right: 100px;
     padding-left: 100px;
-    height: min-content;
-    padding-top: 1px;
-    padding-bottom: 1px;
+    height: fit-content;
+    padding-top: 0px;
+    padding-bottom: 0px;
     background: #F2EBE9;
     z-index: 4;
 }
 
-.nav-items{
+#nav-items{
     display: flex;
     gap: 28px;
     align-items: center;   
-    justify-content: left;     
+    justify-content: left;   
 }
-.nav-items a{
+#nav-items a{
     color: #DE5499;
     font-family: Numans;
     font-size: 20px;
     display: inline;  
     text-decoration: none;
 }
-a:hover{
-    color: #DE5499;
+#nav-items div{
+    transition: all 0.2s;
+    opacity: 1;
 }
+#nav-items div:hover{
+   opacity: 0.9;
+   transform: translateY(-5px);
+} 
 
 /* Nilsu */
 
 .nav-logo{
     display: flex;
+    height: fit-content;
+    width: fit-content;
 }
 
 .nav-logo b{
@@ -58,22 +65,31 @@ a:hover{
     text-align: center;
     align-items: center;
     font-family: Fascinate Inline;
-    font-size: 65px;
+    font-size: 55px;
     display: block;
 }
 
 /* Icons */
 
-.nav-icons{
+#nav-icons{
     align-items: center;
     display: flex;
     justify-content: right;
     gap: 40px;
 }
 
-.nav-icons a{
+#nav-icons a{
     display: inline;
 }
+#nav-icons img{
+    opacity: 1;
+    transition: all 0.2s;
+}
+#nav-icons img:hover{
+    opacity: 0.9;
+    transform: translateY(-5px);
+}
+
 /* Menu Items */
 #nav-menu{
     display: none;
@@ -88,13 +104,18 @@ a:hover{
     padding-right: 0px;
 }
 #menu-btn img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     margin-right: 0px;
     padding-right: 0px;
 }
 
 /* Offcanvas Items */
+
+#offcanvasRight{
+    width: 280px;
+}
+
 .offcanvas-body{
     background-color: transparent;
 }
@@ -170,7 +191,7 @@ a:hover{
 #hey-header{
     color: #264143;
     font-family: Numans;
-    font-size: 65px;
+    font-size: 75px;
     position: relative;
 }
 #welcome-prg{
@@ -199,8 +220,12 @@ a:hover{
     height: 500px;
     position: absolute;
     z-index: 4;
-    left: -1px; /* Adjust as needed */
-    top: -1px;
+    left: 0px; /* Adjust as needed */
+    top: 0px;
+    transition: all 0.3s;
+}
+#headshot-img img:hover{
+    transform: rotateZ(-4deg);
 }
 #bg-rectangle{
     width: 370px;
@@ -298,7 +323,10 @@ a:hover{
     width: 128px;
     height: 128px;
     padding: 10px;
-
+    transition: all 0.5s;
+}
+#skills-listed img:hover{
+    transform: translateY(-25px);
 }
 
 /* Contact Me Area */
@@ -334,7 +362,7 @@ a:hover{
     background-color: #7E8B8D;
     border-radius: 100px;
     padding: 50px 0px 50px 0px;
-    margin-top: 40px;  
+    margin-top: 30px;  
     width: fit-content;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
@@ -343,8 +371,8 @@ a:hover{
     margin: 10px;
     width: 300px;
     height: 50px;
-    border-radius: 50px;
-    padding: 10px;
+    border-radius: 20px;
+    padding: 10px 10px 10px 20px;
     font-size: 18px;
     font-family: Numans;
     border: none;
@@ -360,7 +388,7 @@ a:hover{
     background-color: #D9D9D9;
     width: 300px;
     height: 270px;
-    border-radius: 50px;
+    border-radius: 40px;
     font-size: 18px;
     font-family: Numans;
     border: none;
@@ -376,7 +404,7 @@ a:hover{
     font-family: Numans;
 }
 #send-btn{
-    background-color: #F097C4;
+    background-color: #f082b9;
     width: 110px;
     height: 50px;
     border-radius: 50px;
@@ -384,6 +412,10 @@ a:hover{
     font-family: Numans;
     color: #D9D9D9;
     text-align: center;
+    transition: all 0.3s;
+}
+#send-btn:hover{
+    background-color: #ed8dbd;
 }
 
 @media screen and (max-width:1000px) {
@@ -392,7 +424,7 @@ a:hover{
         padding-right: 70px;
         padding-left: 70px;
     }
-    .nav-icons{
+    #nav-icons{
         gap: 30px;
     }
     #explanation{
@@ -406,15 +438,15 @@ a:hover{
     
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:867px){
     #my-navbar{
         padding-right: 0px;
         padding-left: 25px;
     }
-    .nav-icons{
+    #nav-icons{
         display: none;
     }
-    .nav-items{
+    #nav-items{
         display: none;   
     }
     /* Menu Items */
@@ -436,6 +468,9 @@ a:hover{
     #contact-me-area{
         margin-left: 10px;
         margin-right: 10px;
+    }
+    #content-div{
+        padding-top: 0px;
     }
     
 }
@@ -490,6 +525,8 @@ a:hover{
     #contact-me-area{
         margin-right: 0px;
         margin-left: 0px;
+        padding-left: 0px ;
+        padding-right: 0px;
     }
     #headshot-img img{
         width: 300px;
