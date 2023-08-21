@@ -44,7 +44,7 @@ html, #my-canvas{
     text-decoration: none;
 }
 #nav-items div{
-    transition: all 0.2s;
+    transition: all 0.3s;
     opacity: 1;
 }
 #nav-items div:hover{
@@ -83,7 +83,7 @@ html, #my-canvas{
 }
 #nav-icons img{
     opacity: 1;
-    transition: all 0.2s;
+    transition: all 0.3s;
 }
 #nav-icons img:hover{
     opacity: 0.9;
@@ -324,10 +324,31 @@ html, #my-canvas{
     height: 128px;
     padding: 10px;
     transition: all 0.5s;
+    margin-bottom: 15px;
 }
+
+#skills-listed span{
+    font-family: Numans;
+    font-size: 15px;
+    opacity: 0;
+    transition: all 0.3s;
+    color: #7E8B8D;
+    width: max-content;
+   /*  margin-top: -30px; */
+}
+
+#each-skill:hover span{
+    opacity: 1;
+}
+
 #skills-listed img:hover{
     transform: translateY(-25px);
 }
+.skill-p{
+    margin-top: -40px;
+    text-align: center;
+}
+
 
 /* Contact Me Area */
 
@@ -344,7 +365,7 @@ html, #my-canvas{
     position: relative;
     height: fit-content;
     width: fit-content;
-    padding: 50px 100px 50px 20px;
+    padding: 50px 100px 50px 100px;
     background-color: #D9D9D9;
     border-radius: 100px 100px 0px 0px;
     text-align: center;
@@ -371,7 +392,7 @@ html, #my-canvas{
     margin: 10px;
     width: 300px;
     height: 50px;
-    border-radius: 20px;
+    border-radius: 30px;
     padding: 10px 10px 10px 20px;
     font-size: 18px;
     font-family: Numans;
