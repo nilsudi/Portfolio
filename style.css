@@ -65,7 +65,7 @@ html, #my-canvas{
     text-align: center;
     align-items: center;
     font-family: Fascinate Inline;
-    font-size: 55px;
+    font-size: 45px;
     display: block;
 }
 
@@ -104,8 +104,8 @@ html, #my-canvas{
     padding-right: 0px;
 }
 #menu-btn img{
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     margin-right: 0px;
     padding-right: 0px;
 }
@@ -360,36 +360,39 @@ html, #my-canvas{
 
 #contact-me-area{
     margin-top: 60px;
-    /* margin-left: 100px;
-    margin-right: 100px; */
+    margin-left: 100px;
+    margin-right: 100px;
     position: relative;
     height: fit-content;
     width: fit-content;
-    padding: 50px 100px 50px 100px;
+    padding: 30px 50px 30px 50px; 
     background-color: #D9D9D9;
     border-radius: 100px 100px 0px 0px;
     text-align: center;
     justify-content: center;
     align-items: center;
-    
+    flex-wrap: wrap;
 }
 #contact-me-header{
-    text-align: center;
+    text-align: start;
     font-family: Numans;
-    font-size: 20px;
+    font-size: 85px;
     color: #264143;
+    margin-bottom: 50px;
 }
-#content-div{
+#green-div{
     background-color: #7E8B8D;
-    border-radius: 100px;
-    padding: 50px 0px 50px 0px;
-    margin-top: 30px;  
-    width: fit-content;
+    border-radius: 70px;
+    padding: 12px 32px 32px 32px;
+    margin-top: 30px; 
+    width: 360px;
+    position: relative;
     box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.25);
 }
 .name-mail{
     background-color: #D9D9D9;
-    margin: 10px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     width: 300px;
     height: 50px;
     border-radius: 30px;
@@ -414,8 +417,8 @@ html, #my-canvas{
     font-family: Numans;
     border: none;
     text-align: start;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 7px;
+    margin-bottom: 7px;
     padding: 20px;
 }
 #message-input:focus{
@@ -438,8 +441,40 @@ html, #my-canvas{
 #send-btn:hover{
     background-color: #ed8dbd;
 }
+#contact-me-links{
+    text-align: left;
+}
+#contact-me-links div{
+    font-family: Numans;
+    font-size: 18px;
+    color: #264143;
+    margin-bottom: 10px;
+}
+#display-later-links{
+    display: none;
+    color: #264143;
+    font-family: Numans;
+    font-size: 18px;
+    margin-top: 30px;
+}
 
-@media screen and (max-width:1000px) {
+@media screen and (max-width:1200px) {
+    #contact-me-header{
+        font-size: 75px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    #contact-me-header{
+        font-size: 65px;
+    }
+    #contact-me-area{
+        margin-left: -10px;
+        margin-right: -10px;
+    }
+}
+
+@media screen and (max-width:1006px) {
     
     #my-navbar{
         padding-right: 70px;
@@ -456,13 +491,16 @@ html, #my-canvas{
         margin-left: 70px;
         margin-right: 70px;
     }
+    #contact-me-header{
+        font-size: 65px;
+    }
     
 }
 
 @media screen and (max-width:867px){
     #my-navbar{
         padding-right: 0px;
-        padding-left: 25px;
+        padding-left: 15px;
     }
     #nav-icons{
         display: none;
@@ -486,15 +524,15 @@ html, #my-canvas{
         margin-right: 50px;
         margin-left: 50px;
     }
-    #contact-me-area{
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-    #content-div{
-        padding-top: 0px;
-    }
     
 }
+
+@media screen and (max-width:834px) {
+    #contact-me-header{
+        font-size: 50px;
+    }
+}
+
 @media screen and (max-width:768px) {
     .weird-shape{
         top: -1250px;
@@ -510,10 +548,30 @@ html, #my-canvas{
         margin-left: 25px;
     }
 }
+
+@media screen and (max-width:759px) {
+    #contact-me-links{
+        display: none;
+    }
+    #contact-me-header{
+        text-align: center;
+        margin-top: 10px;
+    }
+    #green-div{
+        margin-top: -10px;
+    }
+    #display-later-links{
+        display: flex;
+    }
+}
+
 @media screen and (max-width:564px) {
     #contact-me-area{
         padding-right: 20px;
         padding-left: 20px;
+    }
+    #contact-me-header{
+        font-size: 40px;
     }
 }
 
@@ -541,11 +599,12 @@ html, #my-canvas{
         padding-right: 10px;
         padding-left: 10px;
     }
+    #contact-me-header{
+        font-size: 30px;
+    }
 }
 @media screen and (max-width:384px) {
-    #contact-me-area{
-        margin-right: 0px;
-        margin-left: 0px;
+    #contact-me-area{   
         padding-left: 0px ;
         padding-right: 0px;
     }
