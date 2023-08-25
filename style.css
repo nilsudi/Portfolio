@@ -464,7 +464,10 @@ html, #my-canvas{
     font-size: 17px;
     color: #264143;
     text-align: center;
+    align-items: center;
+    justify-self: center;
 }
+
 
 @media screen and (max-width:1200px) {
     #contact-me-header{
