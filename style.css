@@ -446,7 +446,7 @@ html, #my-canvas{
 }
 #contact-me-links div{
     font-family: Numans;
-    font-size: 18px;
+    font-size: 17px;
     color: #264143;
     margin-bottom: 10px;
 }
@@ -454,8 +454,16 @@ html, #my-canvas{
     display: none;
     color: #264143;
     font-family: Numans;
-    font-size: 18px;
+    font-size: 17px;
     margin-top: 30px;
+}
+
+#contact-me-links a{
+    text-decoration: none;
+    font-family: Numans;
+    font-size: 17px;
+    color: #264143;
+    text-align: center;
 }
 
 @media screen and (max-width:1200px) {
@@ -562,6 +570,7 @@ html, #my-canvas{
     }
     #display-later-links{
         display: flex;
+        justify-content: space-between;
     }
 }
 
